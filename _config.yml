@@ -1,6 +1,6 @@
 # Site settings
-title: "Alejandro Murillo-González "
-description: "Robotics & AI"
+title: "Alejandro Murillo-González"
+description: "[WEBSITE UNDER CONSTRUCTION] Robotics & AI"
 
 # Build settings
 markdown: kramdown
@@ -9,8 +9,8 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
-resume_name:                    "Lisa M. Simpson"
+resume_avatar:                  "false"
+resume_name:                    "Alejandro Murillo-González"
 resume_title:                   "VP of Global Communications"
 
 # used for the contact button in _layouts/resume.html
