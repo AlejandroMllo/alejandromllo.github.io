@@ -1,16 +1,16 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# akomiBot
+- project: akomiBot
+  role: Co-Founder
+  duration: 2021 &mdash; Present
+  url: "http://www.akomiBot.com"
+  description: akomiBot makes mobile robots to manage multiple physical tasks remotely.
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+# vIvAmed
+- project: vIvAmed
+  role: AI Research Assistant
+  duration: 2020
+  url: "https://vivamed.com.co/"
+  description: Artificial Intelligence for Medical Diagnostics. In charge of the design and development of a Medical Decision Support System using Weakly-Labeled Lung CT Scans. Implemented models for classification with variable size input, as well as lesion segmentation and quantification.
