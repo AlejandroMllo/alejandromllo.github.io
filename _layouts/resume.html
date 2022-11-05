@@ -36,15 +36,20 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          {{ site.resume_header_intro }}
+          <!-- {{ site.resume_header_intro }} -->
+          <p>Alejandro is an incoming PhD student in Intelligent Systems Engineering at the <a href="https://vail.sice.indiana.edu/" target="_blank">Vehicle Autonomy and Intelligence Lab (VAIL)</a> supervised by <a href="https://vail.sice.indiana.edu/pages/lantaoliu.html" target="_blank">Dr. Lantao Liu</a>.
+          Previously, he obtained a BSc in Mathematical Engineering at Universidad EAFIT (Colombia).</p>
+          
+          <p>Alejandro has worked in Research and Product Development in areas such as: Robotics & Control 🤖, Healthcare 🏥, Energy ⚡, Defense 🪖, Marketing 🎟️, Law 🏛️ and Productivity 💻.</p>
         </div>
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        <!-- {% if site.resume_looking_for_work == 'yes' %} -->
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Email</a>
+        <a href="https://drive.google.com/file/d/1xN_it8Zzt4qb_MvXp5OSV7mryzE2XhXG/view" class="contact-button no-print" target="_blank">Resume</a>
+        <!-- {% elsif site.resume_looking_for_work == 'no' %} -->
+        <!-- <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
         {% else %}
-        {% endif %}
+        {% endif %} -->
 
       </header>
 
@@ -107,7 +112,7 @@
         {% for project in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url" target="_blank">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>
@@ -234,6 +239,7 @@
       <footer class="page-footer">
         <!-- <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
         <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p> -->
+        <p class="footer-line">Last updated on November 4th 2022.</p>
       </footer>
 
     </div>
