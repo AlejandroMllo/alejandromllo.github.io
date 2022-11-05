@@ -46,7 +46,7 @@ resume_looking_for_work:        "yes"
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/AlejandroMllo/"
-  resume_twitter_url:           "https://twitter.com/AlejandroMllo"
+  resume_twitter_url:           "https://twitter.com/AlejandroMllo/"
   # resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url:          "https://www.linkedin.com/in/alejandromllo/"
