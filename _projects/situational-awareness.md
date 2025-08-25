@@ -1,7 +1,7 @@
 ---
 layout: project_detail
 permalink: /projects/situational-awareness/
-title: "Project: Situationally-Aware Dynamics Learning" 
+title: "Paper: Situationally-Aware Dynamics Learning" 
 
 # --- Project Details ---
 project_title: "Situationally-Aware Dynamics Learning"
