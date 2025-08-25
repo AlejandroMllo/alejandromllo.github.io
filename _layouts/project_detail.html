@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+<!-- Project detail layout unified with resume style -->
+<div class="wrapper project-wrapper">
+
+  <!-- Top centered Home button -->
+  <div class="top-home">
+    <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a>
+  </div>
+
+  <header class="page-header project-header">
+    {% if page.avatar %}
+      <img src="{{ page.avatar }}" alt="Photo" class="avatar no-print"/>
+    {% endif %}
+
+    <h1 class="header-name">{{ page.project_title | default: page.title }}</h1>
+
+    <p class="header-subtitle">
+      {% if page.authors_links %}
+        {% for a in page.authors_links %}
+          <a href="{{ a.url }}" class="author-link" target="_blank" rel="noopener">{{ a.name }}</a>{% if forloop.last == false %} &amp; {% endif %}
+        {% endfor %}
+      {% else %}
+        {{ page.authors }}
+      {% endif %}
+    </p>
+
+    {% if page.venue %}
+      <p class="header-venue">{{ page.venue }}</p>
+    {% endif %}
+
+    {% if page.links %}
+    <div class="title-bar no-print">
+      {% for link in page.links %}
+        <a href="{{ link.url }}" class="contact-button project-contact-button" target="_blank">{{ link.icon }} {{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Optional MAIN video: placed between buttons and abstract -->
+    {% if page.main_video %}
+      {% comment %}Support either a string (embed URL) or an object with embed_url, title, description{% endcomment %}
+      {% assign main_embed = page.main_video.embed_url | default: page.main_video %}
+      <div class="main-video-wrapper" style="margin-top:1rem;">
+        <div class="video-container main-video">
+          <iframe src="{{ main_embed }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% if page.main_video.title or page.main_video.description %}
+        <div class="main-video-meta" style="margin-top:0.5rem; text-align:center;">
+          {% if page.main_video.title %}<div class="resume-item-title">{{ page.main_video.title }}</div>{% endif %}
+          {% if page.main_video.description %}<div class="resume-item-copy">{{ page.main_video.description }}</div>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </header>
+
+  <!-- Main content comes from the project's markdown body (Abstract, details, figures) -->
+  <main class="content-section project-content">
+    <article class="resume-item">
+      <div class="resume-item-copy">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <!-- Videos (remaining ones) -->
+  {% if page.videos %}
+  <section class="content-section videos-section">
+    <header class="section-header"><h2>Videos</h2></header>
+    {% assign main_embed_compare = page.main_video.embed_url | default: page.main_video | default: '' %}
+    {% for video in page.videos %}
+      {% assign this_embed = video.embed_url | default: video %}
+      {% if this_embed != main_embed_compare %}
+      <div class="resume-item video-item">
+        <div class="video-details">
+          <h3 class="resume-item-title">{{ video.title }}</h3>
+          <p class="resume-item-copy">{{ video.description }}</p>
+        </div>
+        <div class="video-embed-wrapper">
+          <div class="video-container">
+            <iframe src="{{ this_embed }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <!-- Citation (optional) -->
+  {% if page.bibtex %}
+  <section class="content-section citation-section">
+    <header class="section-header"><h2>Citation</h2></header>
+    <div class="resume-item">
+      <div class="bibbox">{{ page.bibtex | escape }}</div>
+    </div>
+  </section>
+  {% endif %}
+
+</div>
+
+<style>
+/* Container */
+.project-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #222;
+}
+
+/* Top Home button */
+.top-home { text-align:center; margin-bottom:0.75rem; }
+.home-button { display:inline-block; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:700; background:#fff; color:#222; border:1px solid #ddd; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
+.home-button:hover { transform:translateY(-1px); box-shadow:0 4px 10px rgba(0,0,0,0.06); }
+
+/* Header */
+.page-header { text-align:center; margin-bottom:1rem; }
+.avatar { width:90px; height:90px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 0.5rem; }
+.header-name { font-family: 'Lora', Georgia, serif; font-size:2rem; margin:0.25rem 0; }
+.header-subtitle { margin:0; }
+.author-link { color:#4a7bad; text-decoration:none; font-weight:600; }
+.author-link:hover { text-decoration:underline; }
+.header-venue { margin:0.25rem 0 0; color:#777; font-size:0.95rem; }
+
+
+/* Title bar (links) */
+.title-bar { display:flex; justify-content:center; gap:10px; margin-top:0.75rem; flex-wrap:wrap; }
+.contact-button { display:inline-block; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:600; background:#222; color:#fff; }
+.contact-button:hover { background:#444; transform:translateY(-1px); }
+
+/* Main video */
+.main-video-wrapper { max-width:840px; margin:0.75rem auto 0; }
+.video-container.main-video { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px; background:#000; }
+.video-container.main-video iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+
+/* Sections */
+.section-header h2 { margin:0 0 0.5rem 0; border-bottom:1px solid #eee; padding-bottom:0.4rem; }
+.resume-item { margin-bottom:1.25rem; }
+.resume-item-title { margin:0 0 0.25rem 0; }
+.resume-item-copy { color:#333; line-height:1.65; }
+
+/* Ensure images are block-level and centered; captions (paragraphs immediately after an image) sit below the image */
+.resume-item-copy img { display:block; max-width:100%; height:auto; margin:0.75rem auto; float:none; }
+.resume-item-copy img + p { text-align:center; margin-top:0.25rem; color:#666; font-size:0.95rem; margin-bottom:0.75rem; }
+
+/* Also support figure/figcaption markup */
+.resume-item-copy figure { display:block; margin:0.75rem auto; max-width:100%; }
+.resume-item-copy figure img { display:block; margin:0; }
+.resume-item-copy figcaption { text-align:center; margin-top:0.4rem; color:#666; font-size:0.95rem; }
+
+/* Videos */
+.video-item { display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap; }
+.video-embed-wrapper { flex:1 1 420px; min-width:260px; }
+.video-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; background:#000; }
+.video-container iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+
+/* Bibtex box */
+.bibbox { background:#f9f9f9; border:1px solid #e6e6e6; border-radius:6px; padding:12px; white-space:pre-wrap; font-family:Consolas, 'Liberation Mono', monospace; }
+
+/* Responsive */
+@media (max-width:700px){
+  .project-wrapper{ padding:1rem; }
+  .video-item{ flex-direction:column; }
+}
+</style>

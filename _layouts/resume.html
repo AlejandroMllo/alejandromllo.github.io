@@ -37,7 +37,7 @@
 
         <div class="executive-summary" itemprop="description">
           <!-- {{ site.resume_header_intro }} -->
-          <p>Alejandro is a PhD student in Intelligent Systems Engineering at the <a href="https://vail.sice.indiana.edu/" target="_blank">Vehicle Autonomy and Intelligence Lab (VAIL)</a> supervised by <a href="https://vail.sice.indiana.edu/pages/lantaoliu.html" target="_blank">Dr. Lantao Liu</a>.
+          <p>Alejandro is a PhD student in Intelligent Systems Engineering at the <a href="https://vail-robotics.net/" target="_blank">Vehicle Autonomy and Intelligence Lab (VAIL)</a> supervised by <a href="https://vail-robotics.net/pages/lantaoliu" target="_blank">Dr. Lantao Liu</a>.
           Previously, he obtained a BSc in Mathematical Engineering at Universidad EAFIT (Colombia).</p>
           
           <p>Alejandro has worked in Research and Product Development in areas such as: Robotics & Control 🤖, Healthcare 🏥, Energy ⚡, Defense 🪖, Marketing 🎟️, Law 🏛️ and Productivity 💻.</p>
@@ -112,7 +112,18 @@
         {% for project in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url" target="_blank">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <!-- <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url" target="_blank">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3> -->
+         
+          <h3 class="resume-item-title" itemprop="name">
+            {% if project.page_url %}
+              <a href="{{ project.page_url | relative_url }}">{{ project.project }}</a>
+            {% elsif project.url %}
+              <a href="{{ project.url }}" itemprop="url" target="_blank">{{ project.project }}</a>
+            {% else %}
+              {{ project.project }}
+            {% endif %}
+          </h3>
+         
           <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>

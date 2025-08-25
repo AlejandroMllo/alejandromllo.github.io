@@ -1,6 +1,13 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
+# Situationally-Aware Dynamics Learning
+- project: Situationally-Aware Dynamics Learning
+  role: Alejandro Murillo-González & Lantao Liu
+  duration: 2025
+  url: '/projects/situational-awareness/'
+  description: Online and Unsupervised Latent Factor Representation Learning for Robot Dynamics Learning.
+
 # akomiBot
 - project: akomiBot
   role: Co-Founder
