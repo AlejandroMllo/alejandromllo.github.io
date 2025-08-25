@@ -25,21 +25,21 @@ links:
      url: "https://github.com/AlejandroMllo/" # TODO: Add GitHub Repo 1 URL
 
 main_video:
-  embed_url: "https://youtu.be/7a-NzAackE4"
+  embed_url: "https://www.youtube.com/embed/7a-NzAackE4"
   title: "UGV Navigation in Diverse Environments."
   description: "We evaluate the learned situationally-aware dynamics model in a set of unstructured terrain navigation tasks."
 
 videos:
 
-    - embed_url: "https://youtu.be/Eo68c5APuAo"
+    - embed_url: "https://www.youtube.com/embed/Eo68c5APuAo"
       title: "Situation Change Responsiveness"
       description: "This video shows how the situation symbol representing the latent factors experienced by the robot change as it traverses multiple scenarios."
 
-    - embed_url: "https://youtu.be/a9oVk-Qor9c" 
+    - embed_url: "https://www.youtube.com/embed/a9oVk-Qor9c" 
       title: "Quadrotor Flying under Changing Wind Conditions."
       description: "We investigate the performance of a situationally-aware dynamics model for a quadrotor tasked with crossing a series of gates suppend in the air while being disturbed by sudden changes in wind patterns."
 
-    - embed_url: "https://youtu.be/xGSFT9QvtJ0" # Example for a Vimeo video
+    - embed_url: "https://www.youtube.com/embed/xGSFT9QvtJ0" # Example for a Vimeo video
       title: "Latent Factor Effect Characterization."
       description: "Data collection to present a real world example of the motivation for a latent factor representation learning method."
 
