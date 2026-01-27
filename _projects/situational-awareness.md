@@ -11,7 +11,7 @@ authors_links:
     url: "https://alejandromllo.github.io/"
   - name: "Lantao Liu"
     url: "https://vail-robotics.net/pages/lantaoliu"
-venue: "International Journal of Robotics Research (IJRR), 2026"
+venue: "The International Journal of Robotics Research (IJRR), 2026"
 
 # --- Links ---
 links:
