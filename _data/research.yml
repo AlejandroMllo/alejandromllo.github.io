@@ -1,0 +1,26 @@
+# Research
+# uncomment the urls if you wish to display them, and add your own URL
+
+# Situationally-Aware Dynamics Learning
+- project: Situationally-Aware Dynamics Learning
+  role: Alejandro Murillo-González & Lantao Liu
+  duration: 2026
+  url: '/research/situational-awareness/'
+  description: Online and Unsupervised Latent Factor Representation Learning for Robot Dynamics Learning.
+  venue: The International Journal of Robotics Research (IJRR)
+
+# Action Flow Matching
+- project: Action Flow Matching for Continual Robot Learning
+  role: Alejandro Murillo-González & Lantao Liu
+  duration: 2025
+  url: 'https://www.roboticsproceedings.org/rss21/p026.html'  # '/research/situational-awareness/'
+  description: Online and Non-Episodic Robot Dynamics Model Refinement.
+  venue: "Robotics: Science and Systems (RSS)"
+
+# CAusally-informed Dynamics Learning (CADY)
+- project: Learning Causal Structure Distributions for Robust Planning
+  role: Alejandro Murillo-González, Junhong Xu & Lantao Liu
+  duration: 2025
+  url: '/research/cady/'
+  description: A Causally-inspired Alternative to Ensembles for Uncertainty-aware Dynamics Modeling.
+  venue: "Robotics and Automation Letters (RA-L)"

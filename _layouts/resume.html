@@ -101,10 +101,39 @@
       <!-- end Education -->
       {% endif %}
 
+      {% if site.resume_section_research %}
+      <!-- begin Research -->
+      <section id="research" class="content-section">
+        <header class="section-header">
+          <h2>Selected Publications</h2>
+        </header>
+
+        {% for research in site.data.research %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+         
+          <h3 class="resume-item-title" itemprop="name">
+            {% if research.url %}
+              <a href="{{ research.url }}" itemprop="url" target="_blank">{{ research.project }}</a>
+            {% else %}
+              {{ research.project }}
+            {% endif %}
+          </h3>
+         
+          <h4 class="resume-item-details" itemprop="description">{{ research.role }}  &bull; {{ research.duration }}</h4>
+          {% if research.venue %}<p class="resume-item-venue">{{ research.venue }}</p>{% endif %}
+          <p class="resume-item-copy">{{ research.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Research -->
+      {% endif %}
+
 
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
-      <section class="content-section">
+      <section id="projects" class="content-section">
         <header class="section-header">
           <h2>Projects</h2>
         </header>
@@ -250,7 +279,7 @@
       <footer class="page-footer">
         <!-- <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
         <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p> -->
-        <p class="footer-line">Last updated on December 14th 2022.</p>
+        <p class="footer-line">Last updated on March 2026.</p>
       </footer>
 
     </div>
