@@ -13,7 +13,7 @@
 - project: Action Flow Matching for Continual Robot Learning
   role: Alejandro Murillo-González & Lantao Liu
   duration: 2025
-  url: 'https://www.roboticsproceedings.org/rss21/p026.html'  # '/research/situational-awareness/'
+  url: 'https://www.roboticsproceedings.org/rss21/p026.html'
   description: Online and Non-Episodic Robot Dynamics Model Refinement.
   venue: "Robotics: Science and Systems (RSS)"
 
