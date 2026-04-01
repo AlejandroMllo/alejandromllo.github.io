@@ -34,6 +34,10 @@ links:
      icon: "💻"
      url: "https://github.com/AlejandroMllo/situationally_aware_dynamics_learning"
 
+  - label: "RSS 2025 - RoboReps"
+    icon: "📄"
+    url: "https://rss25-roboreps.github.io/papers/13_Online_Latent_Factor_Repres.pdf"
+
 main_video:
   embed_url: "https://www.youtube.com/embed/7a-NzAackE4"
   title: "UGV Navigation in Diverse Environments."
