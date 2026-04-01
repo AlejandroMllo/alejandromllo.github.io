@@ -17,7 +17,7 @@ venue: "Robotics and Automation Letters (RA-L), 2025"
 # --- Links ---
 links:
 
-  -  label: "Publication"
+  -  label: "RA-L"
      icon: "📄"
      url: "https://ieeexplore.ieee.org/abstract/document/11123776"
 

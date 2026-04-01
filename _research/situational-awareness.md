@@ -11,18 +11,28 @@ authors_links:
     url: "https://alejandromllo.github.io/"
   - name: "Lantao Liu"
     url: "https://vail-robotics.net/pages/lantaoliu"
+keywords:
+  - "Hidden State Representation"
+  - "Symbolic Reasoning"
+  - "Representation Learning"
+  - "Online Learning"
+  - "Model-Based RL (MBRL)"
 venue: "The International Journal of Robotics Research (IJRR), 2026"
 
 # --- Links ---
 links:
 
-  -  label: "Paper PDF"
+  -  label: "IJRR"
+     icon: "📄"
+     url: "https://doi.org/10.1177/02783649261431863"
+
+  -  label: "PDF"
      icon: "📄"
      url: "https://arxiv.org/pdf/2505.19574"
 
-  -  label: "Code (TBD)"
+  -  label: "Code"
      icon: "💻"
-     url: "https://github.com/AlejandroMllo/" # TODO: Add GitHub Repo 1 URL
+     url: "https://github.com/AlejandroMllo/situationally_aware_dynamics_learning"
 
 main_video:
   embed_url: "https://www.youtube.com/embed/7a-NzAackE4"
@@ -56,8 +66,7 @@ bibtex: |
     year = {2026},
     doi = {10.1177/02783649261431863},
     URL = {https://doi.org/10.1177/02783649261431863},
-    eprint = {https://doi.org/10.1177/02783649261431863},
-    abstract = {Autonomous robots operating in complex, unstructured environments face significant challenges due to latent, unobserved factors that obscure their understanding of both their internal state and the external world. Addressing this challenge would enable robots to develop a more profound grasp of their operational context. To tackle this, we propose a novel framework for online learning of hidden state representations, with which the robots can adapt in real time to uncertain and dynamic conditions that would otherwise be ambiguous and result in suboptimal or erroneous behaviors. Our approach is formalized as a Generalized Hidden Parameter Markov Decision Process, which explicitly models the influence of unobserved parameters on both transition dynamics and reward structures. Our core innovation lies in learning online the joint distribution of state transitions, which serves as an expressive representation of latent ego- and environmental-factors. This probabilistic approach supports the identification and adaptation to different operational situations, improving robustness and safety. Through a multivariate extension of Bayesian Online Changepoint Detection, our method segments changes in the underlying data generating process governing the robot’s dynamics. The robot’s transition model is then informed with a symbolic representation of the current situation derived from the joint distribution of latest state transitions, enabling adaptive and context-aware decision-making. To demonstrate effectiveness, we validate our approach on an unmanned ground vehicle operating in diverse unstructured terrains, both in simulation and in real-world experiments. We also evaluate a quadrotor in simulation under randomly changing wind conditions. Both setups introduce unmodeled and unmeasured environmental factors that substantially affect robot motion. Extensive experiments in both simulation and real world reveal significant improvements in data efficiency, policy performance, and the emergence of safer, adaptive navigation strategies. Website: https://alejandromllo.github.io/research/situational-awareness/.}
+    eprint = {https://doi.org/10.1177/02783649261431863}
   }
 ---
 
