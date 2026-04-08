@@ -16,7 +16,6 @@ keywords:
   - "Generative Model"
   - "Model-Based RL (MBRL)"
   - "Lifelong Learning"
-  - "Unmanned Ground Vehicle (UGV)"
 venue: "Robotics: Science and Systems (RSS), 2025"
 
 # --- Links ---
@@ -34,10 +33,10 @@ links:
      icon: "💻"
      url: "https://github.com/AlejandroMllo/action_flow_matching"
 
-main_video:
-  embed_url: "https://www.youtube.com/embed/QqK0IKINJEQ?start=14140"
-  title: "Oral Presentation at RSS 2025."
-  description: "Online and Non-Episodic Robot Dynamics Model Refinement."
+# main_video:
+#   embed_url: "https://www.youtube.com/embed/QqK0IKINJEQ?start=14140"
+#   title: "Oral Presentation at RSS 2025."
+#   description: "Online and Non-Episodic Robot Dynamics Model Refinement."
 
 # --- CITATION ---
 # The layout file will format this into a nice-looking section.
