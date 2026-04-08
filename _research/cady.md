@@ -12,6 +12,11 @@ authors_links:
     url: "https://junhongxu.github.io/"
   - name: "Lantao Liu"
     url: "https://vail-robotics.net/pages/lantaoliu"
+keywords:
+  - "Dynamics Learning"
+  - "Model-Based RL (MBRL)"
+  - "Planning under Uncertainty"
+  - "Unmanned Ground Vehicle (UGV)"
 venue: "Robotics and Automation Letters (RA-L), 2025"
 
 # --- Links ---
@@ -21,7 +26,7 @@ links:
      icon: "📄"
      url: "https://ieeexplore.ieee.org/abstract/document/11123776"
 
-  -  label: "Paper PDF"
+  -  label: "PDF"
      icon: "📄"
      url: "https://arxiv.org/pdf/2508.06742"
 
