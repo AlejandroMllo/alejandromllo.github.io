@@ -12,5 +12,5 @@
 - project: vIvAmed
   role: AI Research Assistant
   duration: 2020
-  url: "https://vivamed.com.co/"
+  # url: "https://vivamed.com.co/"
   description: Artificial Intelligence for Medical Diagnostics. In charge of the design and development of a Medical Decision Support System using Weakly-Labeled Lung CT Scans. Implemented models for classification with variable size input, as well as lesion segmentation and quantification.
