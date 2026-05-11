@@ -1,6 +1,15 @@
 # Research
 # uncomment the urls if you wish to display them, and add your own URL
 
+# PASTA
+# - project: "PASTA: Policy-optimization via Adaptive Smooth Tchebycheff Attention"
+- project: "Adaptive Smooth Tchebycheff Attention for Multi-Objective Policy Optimization"
+  role: Alejandro Murillo-González, Mahmoud Ali & Lantao Liu
+  duration: 2026
+  url: '/research/pasta/'
+  description: "PASTA 🍝: Stable Policy Optimization for Non-Convex Pareto Tradeoffs."
+  venue: "Robotics: Science and Systems (RSS)"
+
 # Situationally-Aware Dynamics Learning
 - project: Situationally-Aware Dynamics Learning
   role: Alejandro Murillo-González & Lantao Liu
