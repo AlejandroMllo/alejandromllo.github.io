@@ -34,9 +34,9 @@ links:
      icon: "📄"
      url: # "https://arxiv.org/pdf/2505.19574"
 
-  -  label: "Code (TBA)"
+  -  label: "Code"
      icon: "💻"
-     url: # "https://github.com/AlejandroMllo/situationally_aware_dynamics_learning"
+     url: "https://github.com/AlejandroMllo/PASTA"
 
 main_video:
   embed_url: "https://www.youtube.com/embed/xLynYv05Bdc"
