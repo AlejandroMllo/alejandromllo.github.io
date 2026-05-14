@@ -30,9 +30,9 @@ links:
   #    icon: "📄"
   #    url: # "https://doi.org/10.1177/02783649261431863"
 
-  -  label: "PDF (TBA)"
+  -  label: "PDF"
      icon: "📄"
-     url: # "https://arxiv.org/pdf/2505.19574"
+     url: "https://arxiv.org/abs/2605.12771"
 
   -  label: "Code"
      icon: "💻"
