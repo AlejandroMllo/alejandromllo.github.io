@@ -26,9 +26,9 @@ venue: "Robotics: Science and Systems (RSS), 2026"
 # --- Links ---
 links:
 
-  # -  label: "RSS"
-  #    icon: "📄"
-  #    url: # "https://doi.org/10.1177/02783649261431863"
+  -  label: "RSS"
+     icon: "📄"
+     url: "https://roboticsconference.org/program/papers/134/"
 
   -  label: "PDF"
      icon: "📄"
@@ -39,11 +39,15 @@ links:
      url: "https://github.com/AlejandroMllo/PASTA"
 
 main_video:
-  embed_url: "https://www.youtube.com/embed/xLynYv05Bdc"
-  title: "Stealth Visual Search."
-  description: "Robot exploration task where its presence must be non-disruptive. For example, monitoring fragile ecosystems without disturbing wildlife."
+  embed_url: "https://www.youtube.com/embed/kdXbwXUxCOA"
+  title: "Paper Overview."
+  description: "We introduce an Adaptive Smooth Tchebycheff Scalarization framework to inform PPO's value loss and improve policy-optimization in non-convex Pareto tradeoffs."
 
 videos:
+
+    - embed_url: "https://www.youtube.com/embed/xLynYv05Bdc"
+      title: "Stealth Visual Search"
+      description: "Robot exploration task where its presence must be non-disruptive. For example, monitoring fragile ecosystems without disturbing wildlife."
 
     - embed_url: "https://www.youtube.com/embed/twh3YZ6eczo"
       title: "Drone Flying among Random Agents"
