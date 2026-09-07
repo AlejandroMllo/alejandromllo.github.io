@@ -28,7 +28,7 @@ links:
 
   -  label: "RSS"
      icon: "📄"
-     url: "https://roboticsconference.org/program/papers/134/"
+     url: "https://www.roboticsproceedings.org/rss22/p134.html"
 
   -  label: "PDF"
      icon: "📄"
@@ -56,13 +56,14 @@ videos:
 # --- CITATION ---
 # The layout file will format this into a nice-looking section.
 bibtex: |
-  @INPROCEEDINGS{murillo2026pasta, 
-      AUTHOR    = {Alejandro Murillo-González AND Mahmoud Ali AND Lantao Liu}, 
-      TITLE     = {{Adaptive Smooth Tchebycheff Attention for Multi-Objective Policy Optimization}}, 
-      BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
-      YEAR      = {2026}, 
-      ADDRESS   = {Sydney, Australia}, 
-      MONTH     = {July}
+  @INPROCEEDINGS{Murillo-GonzálezA-RSS-26, 
+    AUTHOR    = {Alejandro Murillo-González AND Mahmoud Ali AND Lantao Liu}, 
+    TITLE     = {{Adaptive Smooth Tchebycheff Attention for Multi-Objective Policy Optimization}}, 
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+    YEAR      = {2026}, 
+    ADDRESS   = {Sydney, Australia}, 
+    MONTH     = {July}, 
+    DOI       = {10.15607/RSS.2026.XXII.134} 
   } 
 ---
 
